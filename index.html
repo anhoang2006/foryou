@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gấu Con Cute Màu Nâu</title>
+  <style>
+    .bear {
+      position: relative;
+      width: 200px;
+      height: 250px;
+      background-color: #8B4513; /* Màu nâu */
+      border-radius: 100px;
+      margin: 100px auto;
+    }
+
+    .bear::before, .bear::after {
+      content: "";
+      position: absolute;
+      background-color: #8B4513; /* Màu nâu */
+      border-radius: 50%;
+    }
+
+    .bear::before {
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      left: 30px;
+    }
+
+    .bear::after {
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      right: 30px;
+    }
+
+    .ear-left, .ear-right {
+      position: absolute;
+      background-color: #D2691E; /* Màu tai gấu */
+      border-radius: 50%;
+    }
+
+    .ear-left {
+      width: 40px;
+      height: 40px;
+      top: 20px;
+      left: -20px;
+    }
+
+    .ear-right {
+      width: 40px;
+      height: 40px;
+      top: 20px;
+      right: -20px;
+    }
+
+    .eyes {
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+    }
+
+    .eye {
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    .nose {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    .mouth {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 20px;
+      border: 3px solid black;
+      border-radius: 50%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="bear">
+    <div class="ear-left"></div>
+    <div class="ear-right"></div>
+    <div class="eyes">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
+
